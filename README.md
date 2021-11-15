@@ -59,7 +59,7 @@ This implementation has a time complexity of O(nlogn).
    - Mike Wilks            Jacque Vaughn
    - Mike Wilks            Earl Watson
    ```
-6. Quit the game entering 1 and hit enter
+6. Quit the game entering q and hit enter
    ```sh
    NBA-pairs q
    ```
