@@ -37,7 +37,7 @@ This implementation has a time complexity of O(nlogn).
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/ZoltanMG/Tempo.git
+   git clone https://github.com/daniloromero/NBA_pairs
    ```
 2. Go to NBA_pairs directory
    ```sh
