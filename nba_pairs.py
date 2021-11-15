@@ -70,7 +70,7 @@ def search(size):
         plyr2 = total - int(players[p].get('h_in'))
         if plyr2 > max_height or plyr2 < min_height:
             continue
-        if plyr1 > plyr2:  # stops search if curent player greater than target
+        if plyr1 > plyr2:  # stops search if current player greater than target
             break
         if plyr1 == plyr2:
             adjacent_up(p, plyr2, p),

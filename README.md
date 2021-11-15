@@ -8,8 +8,8 @@ matches are found, the application will print "No matches found"
 
 Sample output is as follows:
 ```
-> app 139
+> NBA-pairs 139
 
-- Brevin Knight         Nate Robinson
-- Nate Robinson         Mike Wilks
+- Nate Robinson      	Mike Wilks
+- Nate Robinson      	Brevin Knight
 ```
