@@ -4,6 +4,23 @@ import requests
 import sys
 
 
+def get_input():
+    """User input
+    Return: user input casted as integer or
+            None if input is not an integer
+    """
+    user = input('NBA-pairs ')
+    if user == 'q':
+        sys.exit(0)
+    # Validation of input as an integer
+    try:
+        user = int(user)
+        return user
+    except ValueError:
+        print('You did not enter a valid 3 digit integer')
+        return None
+
+
 def adjacent_up(p, target, mid):
     """Performs linear search to find adjacent pair right side
     Args:
@@ -135,14 +152,8 @@ if __name__ == '__main__':
     print('Enter a 3 digit number to get pairs of NBA players\n'
           'that match your number with their height in inches')
     while True:
-        total = input('NBA-pairs ')
-        if total == 'q':
-            sys.exit(0)
-        # Validation of input as an integer
-        try:
-            total = int(total)
-        except ValueError:
-            print('You did not enter a valid 3 digit integer')
+        total = get_input()
+        if total is None:
             continue
         r = requests.get(url)
 
